@@ -10,6 +10,7 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -36,10 +37,20 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -54,15 +65,32 @@
       <node concept="3Tm1VV" id="1gZNRNE_KN_" role="1B3o_S" />
       <node concept="17QB3L" id="1gZNRNE_N0D" role="3clF45" />
       <node concept="3clFbS" id="1gZNRNE_KNB" role="3clF47">
+        <node concept="3SKdUt" id="1gZNRNE_Z4i" role="3cqZAp">
+          <node concept="3SKdUq" id="1gZNRNE_Z4k" role="3SKWNk">
+            <property role="3SKdUp" value="refactor to own method" />
+          </node>
+        </node>
         <node concept="3cpWs6" id="1gZNRNE_N1c" role="3cqZAp">
-          <node concept="Xl_RD" id="1gZNRNE_N1D" role="3cqZAk">
-            <property role="Xl_RC" value="first version" />
+          <node concept="BsUDl" id="1gZNRNE_Z4X" role="3cqZAk">
+            <ref role="37wK5l" node="1gZNRNE_Z4U" resolve="getMethodResult" />
           </node>
         </node>
       </node>
     </node>
     <node concept="13hLZK" id="1gZNRNE_KNq" role="13h7CW">
       <node concept="3clFbS" id="1gZNRNE_KNr" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1gZNRNE_Z4U" role="13h7CS">
+      <property role="TrG5h" value="getMethodResult" />
+      <node concept="3Tm6S6" id="1gZNRNE_Z4V" role="1B3o_S" />
+      <node concept="17QB3L" id="1gZNRNE_Z4W" role="3clF45" />
+      <node concept="3clFbS" id="1gZNRNE_Z4K" role="3clF47">
+        <node concept="3cpWs6" id="1gZNRNE_Z4O" role="3cqZAp">
+          <node concept="Xl_RD" id="1gZNRNE_Z4P" role="3cqZAk">
+            <property role="Xl_RC" value="first version" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
