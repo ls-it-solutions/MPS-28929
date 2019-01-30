@@ -36,6 +36,7 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -60,6 +61,12 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="1gZNRNE_ZHx" role="13h7CS">
+      <property role="TrG5h" value="anotherMethod" />
+      <node concept="3Tm1VV" id="1gZNRNE_ZHy" role="1B3o_S" />
+      <node concept="3cqZAl" id="1gZNRNE_ZI5" role="3clF45" />
+      <node concept="3clFbS" id="1gZNRNE_ZH$" role="3clF47" />
     </node>
     <node concept="13hLZK" id="1gZNRNE_KNq" role="13h7CW">
       <node concept="3clFbS" id="1gZNRNE_KNr" role="2VODD2" />
