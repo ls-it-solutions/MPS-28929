@@ -50,7 +50,7 @@
   <node concept="13h7C7" id="1gZNRNE_KNp">
     <ref role="13h7C2" to="yqum:1gZNRNE_KNo" resolve="ConceptA" />
     <node concept="13i0hz" id="1gZNRNE_KN$" role="13h7CS">
-      <property role="TrG5h" value="methodA" />
+      <property role="TrG5h" value="methodARenamed" />
       <node concept="3Tm1VV" id="1gZNRNE_KN_" role="1B3o_S" />
       <node concept="17QB3L" id="1gZNRNE_N0D" role="3clF45" />
       <node concept="3clFbS" id="1gZNRNE_KNB" role="3clF47">
